@@ -16,7 +16,9 @@ defmodule MattdavisWeb.Router do
   scope "/", MattdavisWeb do
     pipe_through :browser # Use the default browser stack
 
+    post "/visitors/new", VisitorController, :create
     get "/", PageController, :index
+    get "/mythicmen", MythController, :index
   end
 
   # Other scopes may use custom stacks.

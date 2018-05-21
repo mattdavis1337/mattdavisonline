@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mythic Men</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <span class="brand-logo">MYTHIC MEN</span>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br />
+        <h1 class="center strong white-text text-darken-4">Mythic Men: Quest for the Master Key</h1><br>
+        <div class="row center">
+          <h5 class="col s12 white-text text-darken-4">What could you accomplish in 21 days?</h5>
+          <h5 class="col s12 white-text text-darken-4">Join this <span class="purple-text text-lighten-4" style="font-size:1.1em">3 Week Goal Accelerator Program</span> that uses the </h5>
+          <h5 class="col s12 white-text text-darken-4">power of <span class="teal-text text-lighten-4"  style="font-size:1.1em">Myth and Story</span> to inspire and motivate you</h5>
+          <h5 class="col s12 white-text text-darken-4">Don't miss out! June 1 - 21,  2018</h5>
+        </div>
+        <div class="row center">
+          <a href="/mythicmen/#test2" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+          <!--a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">No</a-->
+        </div>
+
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/starscape.jpg" alt="Warm Background"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h4 class="center brown-text" style="font-weight:bold">Do You Have a Clear Vision?</h4>
+            <p class="light center" style="font-size:1.2em;font-weight:bold">Getting clear on what you want is the first step to having it. Your quest begins with the <span class="red-text text-darken-4">Call to Adventure</span> - a 1 on 1 coaching call where you get crystal clear on a specific, measurable, and time-bound goal or outcome for this 21 Day Quest.  Join the weekly group calls to be inspired by the visions and stories of the other adventurers joining you on this journey.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">sentiment_dissatisfied</i></h2>
+            <h4 class="center brown-text" style="font-weight:bold">Then What's Stopping You?</h4>
+
+            <p class="light center" style="font-size:1.2em;font-weight:bold">You know what you want, ask yourself "Why don't I have it already?".  It's time to name your <span class="red-text text-darken-4">Personal Demons</span>.  We help you notice the limiting behavior and thought patterns that keep you stuck. By naming these as demons, you gain power over them.  We arm and equip you to fight your demons with step-by-step mindset guides, group coaching support and more. </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">whatshot</i></h2>
+            <h4 class="center brown-text" style="font-weight:bold">Grit and Loving Challenge.</h4>
+
+            <p class="light center" style="font-size:1.2em;font-weight:bold">Once you know what you want and you know the demons blocking you it is time to be <span class="red-text text-darken-4">armed and equipped</span> to battle them. We know how to challenge you in a way that stirs your deepest power.  No shaming, no fake enthusiasm.  This is pure loving honesty.  It's time to learn the location of your <span class="red-text text-darken-4">Personal Master Key</span>.  These are your deep internal virtues, skills and powers that will guide you to victory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  PARALLAX 2 ********************************************* -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="col s12 ">Join The Quest for the Master Key</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/labyrinth.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <img src="images/herojourney.png">
+      </div>
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Get 100% Clear on Your Personal Vision</h4>
+          <h5 class="left-align ">
+            After you complete your <span class="red-text text-darken-4">Call to Adventure</span>, it is time to  <span class="red-text text-darken-4">Meet the Mentor</span>.
+            <br /><br />
+            At the beginning of the most satisfying stories, the hero meets a mentor who prepares the hero to face the unknown and accept the call to adventure.
+            <br /><br />
+            This will be a 1 on 1 coaching call where we help you get 100% clear on your personal vision.
+            <br /><br />
+            Your mentor will help you <span class="red-text text-darken-4">overcome resistance</span> so you can be specific and make a decision.
+            <br /><br />
+          </h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Learn the Deep Power of Myth and Metaphor</h4>
+          <h5 class="left-align ">
+            Geniuses like Carl Jung and Joseph Campbell have shown how human myths speak to us and move us deeply.
+            <br /><br />
+            The rich metaphor and mythical elements in this program will speak to your subconscious mind in ways that normal factual speech can not.
+            <br /><br />
+            The <span class="red-text text-darken-4">Hero's Journey</span> is one of the most potent mythic structures.
+            <br /><br />
+            Learn how ancient archetypes like <span class="red-text text-darken-4">The King</span>, <span class="red-text text-darken-4">The Warrior</span> and <span class="red-text text-darken-4">The Dragon</span> can give you influence over areas of your life that could give you trouble.
+            <br /><br />
+            During this 21 day adventure your mentor will help you begin documenting your <span class="red-text text-darken-4">Personal Mythos</span>
+          </h5>
+        </div>
+        <div class="col s2 center"></div>
+      </div>
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+
+          <div class="card-panel" style="font-size:2em">
+            <div class="card-panel teal" style="font-size:2em">
+              <h3 class="white-text">Mythic Men: Quest for the Master Key</h3>
+            </div>
+              <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+              <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
+              <br />
+              <a href="/mythicmen/#test2" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="col s12 ">It's Time to Face Your Demons</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/demon.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Obliterate Your Top 3 Limiting Thoughts</h4>
+          <h5 class="left-align ">
+            Everybody has limiting thoughts that they practice over and over.
+            <br /><br />
+            Often without realizing it. We name these the <span class="red-text text-darken-4">3 Demons of Fear</span>.
+            <br /><br />
+            Your mentor will help you notice these thoughts
+            and find the core belief behind them.
+            <br /><br />
+            We lead you through targeted
+            hypnotic processes that completely obliterate these demons and leave you free from their influence forever.
+          </h5>
+        </div>
+        <div class="col s2 center"></div>
+      </div>
+
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+
+          <h3>Mythic Men: Quest for the Master Key</h3>
+          <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+          <div class="card-panel" style="font-size:2em">
+              <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
+          </div>
+        </div>
+        <div class="col s2 center"></div>
+      </div>
+
+
+
+  <div class="parallax-container valign-wrapper" id="test2">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Mythic Men</h5>
+          <p class="grey-text text-lighten-4">We are a team of growth coaches devoted to reclaiming the power of myth and helping people like you achieve their dreams. We believe as more dreams that become reality the world becomes a better place.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
