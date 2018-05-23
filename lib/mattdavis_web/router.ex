@@ -19,6 +19,7 @@ defmodule MattdavisWeb.Router do
     post "/visitors/new", VisitorController, :create
     get "/", PageController, :index
     get "/mythicmen", MythController, :index
+    get "/purchase", MythController, :sale
   end
 
   # Other scopes may use custom stacks.

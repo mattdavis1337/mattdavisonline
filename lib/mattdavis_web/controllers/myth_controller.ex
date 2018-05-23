@@ -5,5 +5,11 @@ defmodule MattdavisWeb.MythController do
 	  	IO.puts("**displaying myth page***")
 	  	#IO.inspect(Bandstock.GraphicMagic.magic)
 	    render conn, "index.html"
-	  end
+	 end
+
+	 def sale(conn, _params) do
+	 		IO.puts("**displaying sales page***")
+
+			render conn, "sale.html"
+	 end
 end

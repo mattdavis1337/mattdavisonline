@@ -1,0 +1,75 @@
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <span class="brand-logo">MYTHIC MEN</span>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="center strong white-text text-darken-4"></h1><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/starscape.jpg" alt="Warm Background"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h4 class="center brown-text" style="font-weight:bold">Ready to Begin your Quest?</h4>
+      </div>
+      <div class="row">
+        <div class="col s2 center"></div>
+        <div class="col s8 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+
+          <h3>Mythic Men: Quest for the Master Key</h3>
+          <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+          <div class="card-panel" style="font-size:2em">
+              <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
+          </div>
+        </div>
+        <div class="col s2 center"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Mythic Men</h5>
+          <p class="grey-text text-lighten-4">We are a team of growth coaches devoted to reclaiming the power of myth and helping people like you achieve their dreams. We believe as more dreams that become reality the world becomes a better place.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
