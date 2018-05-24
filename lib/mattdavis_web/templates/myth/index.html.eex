@@ -1,8 +1,8 @@
 <!DOCTYPE html>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <span class="brown-text hide-on-large-only">MYTHIC MEN</span>
-      <span class="brand-logo hide-on-med-and-down">MYTHIC MEN</span>
+
+
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
@@ -21,14 +21,14 @@
         <div class="row center hide-on-med-and-down">
           <h5 class="col s12 white-text text-darken-4 ">A <span class="purple-text text-lighten-4" style="font-size:1.1em">21-Day Guided Goal Game</span> that uses <span class="teal-text text-lighten-4" style="font-size:1.1em">Myth and Story</span> to turn work into play</h5>
 
-          <h5 class="col s12 white-text text-darken-4">June 1 - 21,  2018</h5>
+          <h5 class="col s12 white-text text-darken-4">Registration open now. Begins on June 9,  2018</h5>
         </div>
         <div class="row center">
           <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/starscape.jpg" alt="Warm Background"></div>
+    <div class="parallax"><img  class="responsive-img" src="images/starscape.jpg" alt="Warm Background"></div>
   </div>
 
   <div class="container">
@@ -92,12 +92,13 @@
         <div class="row center">
           <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">Your Journey Begins Here</h1><br>
           <h3 class="center strong white-text text-darken-4 hide-on-large-only">Your Journey Begins Here</h3><br>
-          <h1 class="col s12 "></h1>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/labyrinth.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img  class="responsive-img"  src="images/labyrinth.jpg" alt="Unsplashed background img 2"></div>
   </div>
+
+
 
   <div class="container">
     <div class="section">
@@ -182,10 +183,10 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
         <div class="col l2 center"></div>
         <div class="col s12 m12 l8 center">
           <h3 ><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="brown-text">The Best Way to Increase Self-Confidence</h4>
+          <h4 class="brown-text">The Only Way to Increase Self-Confidence</h4>
           <br />
           <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
-            The best way to increase self-confidence is to succeed at something.
+            The only way to increase self-confidence is to succeed at something.
             <br /><br />
             This is your chance to <span class="red-text text-darken-4">set a challenging goal</span>, join a group committed to your success, and <span class="red-text text-darken-4">follow through on what you said</span> you would do.
             <br /><br />
@@ -198,12 +199,12 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
         </div>
       </div>
       <div class="row">
-        <div class="col s2 center"></div>
-        <div class="col s8 center">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8  center">
 
           <div class="card-panel" style="font-size:2em">
             <div class="card-panel teal" style="font-size:2em">
-              <h3 class="white-text">Mythic Men: Quest for the Master Key</h3>
+              <h3 class="white-text">Quest for the Master Key</h3>
             </div>
               <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
               <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
@@ -212,30 +213,28 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
           </div>
         </div>
       </div>
-
-
-
     </div>
   </div>
-
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="col s12 ">It's Time to Face Your Demons</h1>
+          <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">It's Time to Face Your Demons</h1><br>
+          <h3 class="center strong white-text text-darken-4 hide-on-large-only">It's Time to Face Your Demons</h3><br>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/demon.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img class="responsive-img" src="images/demon.jpg" alt="Unsplashed background img 2"></div>
   </div>
+
 
   <div class="container">
     <div class="section">
 
       <div class="row">
-        <div class="col s2 center"></div>
-        <div class="col s8 center">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8  center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="brown-text">Obliterate Your Top 3 Limiting Thoughts</h4>
           <h5 class="left-align ">
@@ -253,13 +252,14 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
       </div>
 
       <div class="row">
-        <div class="col s2 center"></div>
-        <div class="col s8 center">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
 
-          <h3>Mythic Men: Quest for the Master Key</h3>
-          <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+
           <div class="card-panel" style="font-size:2em">
+              <h3>Quest for the Master Key</h3>
+              <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
               <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
           </div>
         </div>
@@ -267,16 +267,16 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
       </div>
 
 
-
-  <div class="parallax-container valign-wrapper" id="test2">
+  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="col s12 white-text">The Choice is yours. Your fate is in your hands. </h3>
+          <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">The Choice is yours. Your fate is in your hands.</h1><br>
+          <h4 class="center strong white-text text-darken-4 hide-on-large-only">The Choice is yours. Your fate is in your hands.</h3><br>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img class="responsive-img" src="images/background3.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <footer class="page-footer teal">
@@ -285,21 +285,18 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
         <div class="col l6 s12">
           <h5 class="white-text">Mythic Men</h5>
           <p class="grey-text text-lighten-4">We are a team of growth coaches devoted to reclaiming the power of myth and helping people like you achieve their dreams. We believe as more dreams that become reality the world becomes a better place.</p>
-
-
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="https://www.facebook.com/Mythic-Men-506251079806150/">Facebook</a></li>
-            <li>mattdavis1337@gmail.com</li>
+            <li><a class="blue-text text-darken-4" href="https://www.facebook.com/Mythic-Men-506251079806150/">Join Our Facebook Group</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <li>mattdavis1337@gmail.com</li>
       </div>
     </div>
   </footer>
