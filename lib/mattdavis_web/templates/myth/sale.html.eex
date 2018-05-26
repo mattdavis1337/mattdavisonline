@@ -13,6 +13,7 @@
         <h1 class="center strong white-text text-darken-4"></h1><br>
         <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
         <h4 class="center white-text" style="font-weight:bold">Ready to Begin your Quest?</h4>
+        <h4 class="center white-text" style="font-weight:bold">Get 21 Days of Coaching Support for $297</h4>
       </div>
     </div>
     <div class="parallax"><img class="responsive-img" src="images/bootsonground.jpg" alt="Warm Background"></div>
@@ -21,14 +22,19 @@
   <div class="container">
     <div class="section">
       <div class="row">
-                </div>
+        <h4 class="center black-text" style="font-weight:bold">Your first challenge: </h4>
+        <h4 class="center black-text" style="font-weight:bold">Text Matt Davis right now.</h4>
+        <h4 class="center black-text" style="font-weight:bold">His Number is (512) 579-8800. Say "I'm in."</h4>
+      </div>
       <div class="row">
         <div class="col l2 center"></div>
         <div class="col s12 m12 l8  center">
           <div class="card-panel" style="font-size:2em">
-            <h3>Quest for the Master Key</h3>
-            <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
-            <div>You will have <span class="red-text text-darken-4">21 days</span> to complete your quest and find your personal master key.</div>
+            <h3>The Portal is Open</h3>
+            <img  src="<%= static_path(@conn, "/images/portal.jpg") %>">
+            <br /><br />
+            <div>Remember, life is meant to be PLAY!</div>
+            <div></div>
           </div>
         </div>
         <div class="col s2 center"></div>
@@ -42,32 +48,18 @@
         <div class="col l6 s12">
           <h5 class="white-text">Mythic Men</h5>
           <p class="grey-text text-lighten-4">We are a team of growth coaches devoted to reclaiming the power of myth and helping people like you achieve their dreams. We believe as more dreams that become reality the world becomes a better place.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="blue-text text-darken-4" href="https://www.facebook.com/groups/199475370869173/">Join Our Facebook Group</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <li>mattdavis1337@gmail.com</li>
       </div>
     </div>
   </footer>
