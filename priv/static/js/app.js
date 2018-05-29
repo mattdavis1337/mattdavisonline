@@ -1646,6 +1646,357 @@ require("phoenix_html");
 
 });
 
+require.register("js/bioep.js", function(exports, require, module) {
+"use strict";
+
+window.bioEp = {
+	// Private variables
+	bgEl: {},
+	popupEl: {},
+	closeBtnEl: {},
+	shown: false,
+	overflowDefault: "visible",
+	transformDefault: "",
+
+	// Popup options
+	width: 400,
+	height: 220,
+	html: "",
+	css: "",
+	fonts: [],
+	delay: 5,
+	showOnDelay: false,
+	cookieExp: 30,
+	showOncePerSession: false,
+	onPopup: null,
+
+	// Object for handling cookies, taken from QuirksMode
+	// http://www.quirksmode.org/js/cookies.html
+	cookieManager: {
+		// Create a cookie
+		create: function create(name, value, days, sessionOnly) {
+			var expires = "";
+
+			if (sessionOnly) expires = "; expires=0";else if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+				expires = "; expires=" + date.toGMTString();
+			}
+
+			document.cookie = name + "=" + value + expires + "; path=/";
+		},
+
+		// Get the value of a cookie
+		get: function get(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(";");
+
+			for (var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == " ") {
+					c = c.substring(1, c.length);
+				}if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+			}
+
+			return null;
+		},
+
+		// Delete a cookie
+		erase: function erase(name) {
+			this.create(name, "", -1);
+		}
+	},
+
+	// Handle the bioep_shown cookie
+	// If present and true, return true
+	// If not present or false, create and return false
+	checkCookie: function checkCookie() {
+		// Handle cookie reset
+		if (this.cookieExp <= 0) {
+			// Handle showing pop up once per browser session.
+			if (this.showOncePerSession && this.cookieManager.get("bioep_shown_session") == "true") return true;
+
+			this.cookieManager.erase("bioep_shown");
+			return false;
+		}
+
+		// If cookie is set to true
+		if (this.cookieManager.get("bioep_shown") == "true") return true;
+
+		return false;
+	},
+
+	// Add font stylesheets and CSS for the popup
+	addCSS: function addCSS() {
+		// Add font stylesheets
+		for (var i = 0; i < this.fonts.length; i++) {
+			var font = document.createElement("link");
+			font.href = this.fonts[i];
+			font.type = "text/css";
+			font.rel = "stylesheet";
+			document.head.appendChild(font);
+		}
+
+		// Base CSS styles for the popup
+		var css = document.createTextNode("#bio_ep_bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.3; z-index: 10001;}" + "#bio_ep {display: none; position: fixed; width: " + this.width + "px; height: " + this.height + "px; font-family: 'Titillium Web', sans-serif; font-size: 16px; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); background-color: #fff; box-shadow: 0px 1px 4px 0 rgba(0,0,0,0.5); z-index: 10002;}" + "#bio_ep_close {position: absolute; left: 100%; margin: -8px 0 0 -12px; width: 20px; height: 20px; color: #fff; font-size: 12px; font-weight: bold; text-align: center; border-radius: 50%; background-color: #5c5c5c; cursor: pointer;}" + this.css);
+
+		// Create the style element
+		var style = document.createElement("style");
+		style.type = "text/css";
+		style.appendChild(css);
+
+		// Insert it before other existing style
+		// elements so user CSS isn't overwritten
+		document.head.insertBefore(style, document.getElementsByTagName("style")[0]);
+	},
+
+	// Add the popup to the page
+	addPopup: function addPopup() {
+		// Add the background div
+		this.bgEl = document.createElement("div");
+		this.bgEl.id = "bio_ep_bg";
+		document.body.appendChild(this.bgEl);
+
+		// Add the popup
+		if (document.getElementById("bio_ep")) this.popupEl = document.getElementById("bio_ep");else {
+			this.popupEl = document.createElement("div");
+			this.popupEl.id = "bio_ep";
+			this.popupEl.innerHTML = this.html;
+			document.body.appendChild(this.popupEl);
+		}
+
+		// Add the close button
+		if (document.getElementById("bio_ep_close")) this.closeBtnEl = document.getElementById("bio_ep_close");else {
+			this.closeBtnEl = document.createElement("div");
+			this.closeBtnEl.id = "bio_ep_close";
+			this.closeBtnEl.appendChild(document.createTextNode("X"));
+			this.popupEl.insertBefore(this.closeBtnEl, this.popupEl.firstChild);
+		}
+	},
+
+	// Show the popup
+	showPopup: function showPopup() {
+		if (this.shown) return;
+
+		this.bgEl.style.display = "block";
+		this.popupEl.style.display = "block";
+
+		// Handle scaling
+		this.scalePopup();
+
+		// Save body overflow value and hide scrollbars
+		this.overflowDefault = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+
+		this.shown = true;
+
+		this.cookieManager.create("bioep_shown", "true", this.cookieExp, false);
+		this.cookieManager.create("bioep_shown_session", "true", 0, true);
+
+		if (typeof this.onPopup === "function") {
+			this.onPopup();
+		}
+	},
+
+	// Hide the popup
+	hidePopup: function hidePopup() {
+		this.bgEl.style.display = "none";
+		this.popupEl.style.display = "none";
+
+		// Set body overflow back to default to show scrollbars
+		document.body.style.overflow = this.overflowDefault;
+	},
+
+	// Handle scaling the popup
+	scalePopup: function scalePopup() {
+		var margins = { width: 40, height: 40 };
+		var popupSize = { width: bioEp.popupEl.offsetWidth, height: bioEp.popupEl.offsetHeight };
+		var windowSize = { width: window.innerWidth, height: window.innerHeight };
+		var newSize = { width: 0, height: 0 };
+		var aspectRatio = popupSize.width / popupSize.height;
+
+		// First go by width, if the popup is larger than the window, scale it
+		if (popupSize.width > windowSize.width - margins.width) {
+			newSize.width = windowSize.width - margins.width;
+			newSize.height = newSize.width / aspectRatio;
+
+			// If the height is still too big, scale again
+			if (newSize.height > windowSize.height - margins.height) {
+				newSize.height = windowSize.height - margins.height;
+				newSize.width = newSize.height * aspectRatio;
+			}
+		}
+
+		// If width is fine, check for height
+		if (newSize.height === 0) {
+			if (popupSize.height > windowSize.height - margins.height) {
+				newSize.height = windowSize.height - margins.height;
+				newSize.width = newSize.height * aspectRatio;
+			}
+		}
+
+		// Set the scale amount
+		var scaleTo = newSize.width / popupSize.width;
+
+		// If the scale ratio is 0 or is going to enlarge (over 1) set it to 1
+		if (scaleTo <= 0 || scaleTo > 1) scaleTo = 1;
+
+		// Save current transform style
+		if (this.transformDefault === "") this.transformDefault = window.getComputedStyle(this.popupEl, null).getPropertyValue("transform");
+
+		// Apply the scale transformation
+		this.popupEl.style.transform = this.transformDefault + " scale(" + scaleTo + ")";
+	},
+
+	// Event listener initialisation for all browsers
+	addEvent: function addEvent(obj, event, callback) {
+		if (obj.addEventListener) obj.addEventListener(event, callback, false);else if (obj.attachEvent) obj.attachEvent("on" + event, callback);
+	},
+
+	// Load event listeners for the popup
+	loadEvents: function loadEvents() {
+		// Track mouseout event on document
+		this.addEvent(document, "mouseout", function (e) {
+			e = e ? e : window.event;
+
+			// If this is an autocomplete element.
+			if (e.target.tagName.toLowerCase() == "input") return;
+
+			// Get the current viewport width.
+			var vpWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+			// If the current mouse X position is within 50px of the right edge
+			// of the viewport, return.
+			if (e.clientX >= vpWidth - 50) return;
+
+			// If the current mouse Y position is not within 50px of the top
+			// edge of the viewport, return.
+			if (e.clientY >= 50) return;
+
+			// Reliable, works on mouse exiting window and
+			// user switching active program
+			var from = e.relatedTarget || e.toElement;
+			if (!from) bioEp.showPopup();
+		}.bind(this));
+
+		// Handle the popup close button
+		this.addEvent(this.closeBtnEl, "click", function () {
+			bioEp.hidePopup();
+		});
+
+		// Handle window resizing
+		this.addEvent(window, "resize", function () {
+			bioEp.scalePopup();
+		});
+	},
+
+	// Set user defined options for the popup
+	setOptions: function setOptions(opts) {
+		this.width = typeof opts.width === 'undefined' ? this.width : opts.width;
+		this.height = typeof opts.height === 'undefined' ? this.height : opts.height;
+		this.html = typeof opts.html === 'undefined' ? this.html : opts.html;
+		this.css = typeof opts.css === 'undefined' ? this.css : opts.css;
+		this.fonts = typeof opts.fonts === 'undefined' ? this.fonts : opts.fonts;
+		this.delay = typeof opts.delay === 'undefined' ? this.delay : opts.delay;
+		this.showOnDelay = typeof opts.showOnDelay === 'undefined' ? this.showOnDelay : opts.showOnDelay;
+		this.cookieExp = typeof opts.cookieExp === 'undefined' ? this.cookieExp : opts.cookieExp;
+		this.showOncePerSession = typeof opts.showOncePerSession === 'undefined' ? this.showOncePerSession : opts.showOncePerSession;
+		this.onPopup = typeof opts.onPopup === 'undefined' ? this.onPopup : opts.onPopup;
+	},
+
+	// Ensure the DOM has loaded
+	domReady: function domReady(callback) {
+		document.readyState === "interactive" || document.readyState === "complete" ? callback() : this.addEvent(document, "DOMContentLoaded", callback);
+	},
+
+	// Initialize
+	init: function init(opts) {
+		// Handle options
+		if (typeof opts !== 'undefined') this.setOptions(opts);
+
+		// Add CSS here to make sure user HTML is hidden regardless of cookie
+		this.addCSS();
+
+		// Once the DOM has fully loaded
+		this.domReady(function () {
+			// Handle the cookie
+			if (bioEp.checkCookie()) return;
+
+			// Add the popup
+			bioEp.addPopup();
+
+			// Load events
+			setTimeout(function () {
+				bioEp.loadEvents();
+
+				if (bioEp.showOnDelay) bioEp.showPopup();
+			}, bioEp.delay * 1000);
+		});
+	}
+};
+
+});
+
+require.register("js/bioep.min.js", function(exports, require, module) {
+"use strict";
+
+window.bioEp = { bgEl: {}, popupEl: {}, closeBtnEl: {}, shown: !1, overflowDefault: "visible", transformDefault: "", width: 400, height: 220, html: "", css: "", fonts: [], delay: 5, showOnDelay: !1, cookieExp: 30, showOncePerSession: !1, onPopup: null, cookieManager: { create: function create(a, b, d, c) {
+      var e = "";c ? e = "; expires=0" : d && (c = new Date(), c.setTime(c.getTime() + 864E5 * d), e = "; expires=" + c.toGMTString());document.cookie = a + "=" + b + e + "; path=/";
+    }, get: function get(a) {
+      a += "=";for (var b = document.cookie.split(";"), d = 0; d < b.length; d++) {
+        for (var c = b[d]; " " == c.charAt(0);) {
+          c = c.substring(1, c.length);
+        }if (0 === c.indexOf(a)) return c.substring(a.length, c.length);
+      }return null;
+    }, erase: function erase(a) {
+      this.create(a, "", -1);
+    } }, checkCookie: function checkCookie() {
+    if (0 >= this.cookieExp) {
+      if (this.showOncePerSession && "true" == this.cookieManager.get("bioep_shown_session")) return !0;this.cookieManager.erase("bioep_shown");return !1;
+    }return "true" == this.cookieManager.get("bioep_shown") ? !0 : !1;
+  }, addCSS: function addCSS() {
+    for (var a = 0; a < this.fonts.length; a++) {
+      var b = document.createElement("link");b.href = this.fonts[a];
+      b.type = "text/css";b.rel = "stylesheet";document.head.appendChild(b);
+    }a = document.createTextNode("#bio_ep_bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.3; z-index: 10001;}#bio_ep {display: none; position: fixed; width: " + this.width + "px; height: " + this.height + "px; font-family: 'Titillium Web', sans-serif; font-size: 16px; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); background-color: #fff; box-shadow: 0px 1px 4px 0 rgba(0,0,0,0.5); z-index: 10002;}#bio_ep_close {position: absolute; left: 100%; margin: -8px 0 0 -12px; width: 20px; height: 20px; color: #fff; font-size: 12px; font-weight: bold; text-align: center; border-radius: 50%; background-color: #5c5c5c; cursor: pointer;}" + this.css);b = document.createElement("style");b.type = "text/css";b.appendChild(a);document.head.insertBefore(b, document.getElementsByTagName("style")[0]);
+  }, addPopup: function addPopup() {
+    this.bgEl = document.createElement("div");this.bgEl.id = "bio_ep_bg";document.body.appendChild(this.bgEl);document.getElementById("bio_ep") ? this.popupEl = document.getElementById("bio_ep") : (this.popupEl = document.createElement("div"), this.popupEl.id = "bio_ep", this.popupEl.innerHTML = this.html, document.body.appendChild(this.popupEl));document.getElementById("bio_ep_close") ? this.closeBtnEl = document.getElementById("bio_ep_close") : (this.closeBtnEl = document.createElement("div"), this.closeBtnEl.id = "bio_ep_close", this.closeBtnEl.appendChild(document.createTextNode("X")), this.popupEl.insertBefore(this.closeBtnEl, this.popupEl.firstChild));
+  }, showPopup: function showPopup() {
+    if (!this.shown && (this.bgEl.style.display = "block", this.popupEl.style.display = "block", this.scalePopup(), this.overflowDefault = document.body.style.overflow, document.body.style.overflow = "hidden", this.shown = !0, this.cookieManager.create("bioep_shown", "true", this.cookieExp, !1), this.cookieManager.create("bioep_shown_session", "true", 0, !0), "function" === typeof this.onPopup)) this.onPopup();
+  }, hidePopup: function hidePopup() {
+    this.bgEl.style.display = "none";this.popupEl.style.display = "none";document.body.style.overflow = this.overflowDefault;
+  }, scalePopup: function scalePopup() {
+    var a = bioEp.popupEl.offsetWidth,
+        b = bioEp.popupEl.offsetHeight,
+        d = window.innerWidth,
+        c = window.innerHeight,
+        e = 0,
+        f = 0,
+        g = a / b;a > d - 40 && (e = d - 40, f = e / g, f > c - 40 && (f = c - 40, e = f * g));0 === f && b > c - 40 && (e = (c - 40) * g);a = e / a;if (0 >= a || 1 < a) a = 1;"" === this.transformDefault && (this.transformDefault = window.getComputedStyle(this.popupEl, null).getPropertyValue("transform"));this.popupEl.style.transform = this.transformDefault + " scale(" + a + ")";
+  }, addEvent: function addEvent(a, b, d) {
+    a.addEventListener ? a.addEventListener(b, d, !1) : a.attachEvent && a.attachEvent("on" + b, d);
+  }, loadEvents: function loadEvents() {
+    this.addEvent(document, "mouseout", function (a) {
+      a = a ? a : window.event;"input" != a.target.tagName.toLowerCase() && (a.clientX >= Math.max(document.documentElement.clientWidth, window.innerWidth || 0) - 50 || 50 <= a.clientY || a.relatedTarget || a.toElement || bioEp.showPopup());
+    }.bind(this));this.addEvent(this.closeBtnEl, "click", function () {
+      bioEp.hidePopup();
+    });this.addEvent(window, "resize", function () {
+      bioEp.scalePopup();
+    });
+  }, setOptions: function setOptions(a) {
+    this.width = "undefined" === typeof a.width ? this.width : a.width;this.height = "undefined" === typeof a.height ? this.height : a.height;this.html = "undefined" === typeof a.html ? this.html : a.html;this.css = "undefined" === typeof a.css ? this.css : a.css;this.fonts = "undefined" === typeof a.fonts ? this.fonts : a.fonts;this.delay = "undefined" === typeof a.delay ? this.delay : a.delay;this.showOnDelay = "undefined" === typeof a.showOnDelay ? this.showOnDelay : a.showOnDelay;this.cookieExp = "undefined" === typeof a.cookieExp ? this.cookieExp : a.cookieExp;this.showOncePerSession = "undefined" === typeof a.showOncePerSession ? this.showOncePerSession : a.showOncePerSession;this.onPopup = "undefined" === typeof a.onPopup ? this.onPopup : a.onPopup;
+  }, domReady: function domReady(a) {
+    "interactive" === document.readyState || "complete" === document.readyState ? a() : this.addEvent(document, "DOMContentLoaded", a);
+  }, init: function init(a) {
+    "undefined" !== typeof a && this.setOptions(a);this.addCSS();this.domReady(function () {
+      bioEp.checkCookie() || (bioEp.addPopup(), setTimeout(function () {
+        bioEp.loadEvents();bioEp.showOnDelay && bioEp.showPopup();
+      }, 1E3 * bioEp.delay));
+    });
+  } };
+
+});
+
 require.register("js/init.js", function(exports, require, module) {
 'use strict';
 

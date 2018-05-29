@@ -17,25 +17,30 @@
         <br />
         <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">Join the Quest for The Master Key</h1><br>
         <h3 class="center strong white-text text-darken-4 hide-on-large-only">Join the Quest for The Master Key</h3><br>
-        <p class="light center hide-on-large-only" style="font-size:1.2em;font-weight:bold">A <span class="purple-text text-lighten-4" style="font-size:1.1em">21-Day Guided Game</span> that uses <span class="teal-text text-lighten-4" style="font-size:1.1em">Myth and Story</span> to turn work into play</p>
         <div class="row center hide-on-med-and-down">
-          <h5 class="col s12 white-text text-darken-4 ">A <span class="purple-text text-lighten-4" style="font-size:1.1em">21-Day Guided Goal Game</span> that uses <span class="teal-text text-lighten-4" style="font-size:1.1em">Myth and Story</span> to turn work into play</h5>
 
-          <h5 class="col s12 white-text text-darken-4">Registration open now. Begins on June 9,  2018</h5>
+           <h5 class="col s12 white-text text-darken-4 ">Destroy doubt and indecisiveness.</h5><h5 class="col s12 white-text text-darken-4 "><span class="red-text text-darken-2">Unlock</span> your unique drive and motivation through <span class="red-text">story and play.</span></h5><h5 class="col s12 white-text text-darken-4 "> Start living your dream!</h5>
+
+          <h5 class="col s12 white-text text-darken-4">Space is limited. Begins June 9</h5>
         </div>
         <div class="row center">
           <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
         </div>
       </div>
     </div>
-    <div class="parallax"><img  class="responsive-img" src="images/starscape.jpg" alt="Warm Background"></div>
+    <div class="parallax"><img  class="responsive-img" src="images/journey.jpg" alt="Warm Background"></div>
+  </div>
+
+  <div class="row center hide-on-large-only">
+
+     <h5>Destroy your doubt and indecisiveness.</h5><h5 class="col s12 ">Unlock your unique drive and motivation.</h5><h5> Start living your dream.</h5>
+
+    <h5 class="col s12 ">Space is limited. Begins June 9</h5>
   </div>
 
   <div class="container">
     <div class="section">
       <div class="row center">
-
-        <h5 class="col s12 white-text text-darken-4">June 1 - 21,  2018</h5>
         <h3>What could you accomplish in 21 days?</h3>
       </div>
       <div class="row center">
@@ -61,7 +66,7 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h4 class="center brown-text" style="font-weight:bold">Do You Have a Clear Vision?</h4>
-            <p class="center" style="font-size:1.2em;font-weight:bold">Getting clear on what you want is the first step to having it. Your quest begins with the <span class="red-text text-darken-4">Call to Adventure</span> - a 1 on 1 coaching call where you get crystal clear on an ambitious, specific, and time-bound goal or outcome for this 21 Day Quest.  Join the weekly group calls to be inspired by the visions and stories of the other adventurers joining you on this journey.</p>
+            <p class="center" style="font-size:1.2em;font-weight:bold">Getting clear on what you want is the first step to having it. Your quest begins with the <span class="red-text text-darken-4">Call to Adventure</span> - a 1 on 1 coaching call where you get crystal clear on an ambitious, specific goal or outcome for this 21 Day Quest.  Join the weekly group calls to be inspired by the visions and stories of the other adventurers joining you on this journey.</p>
           </div>
         </div>
 
@@ -266,7 +271,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
                           <p>"But that third meeting, the coming together of being rung like a bell. It feels like a perfect arc through a hairpin turn."</p>
                       </blockquote>
                       <cite><span>David L. Swedlow</span><br>
-                          Manager of Application Dxevelopment<br>
+                          Manager of Application Development<br>
                       </cite>
                   </div>
               </div>

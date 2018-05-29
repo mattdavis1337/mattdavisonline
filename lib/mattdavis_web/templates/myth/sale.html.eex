@@ -31,7 +31,7 @@
         <div class="col s12 m12 l8  center">
           <div class="card-panel" style="font-size:2em">
             <h3>The Portal is Open</h3>
-            <img  src="<%= static_path(@conn, "/images/portal.jpg") %>">
+            <img  class="responsive-img" src="<%= static_path(@conn, "/images/portal.jpg") %>">
             <br /><br />
             <div>Remember, life is meant to be PLAY!</div>
             <div></div>
