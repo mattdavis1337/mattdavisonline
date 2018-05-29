@@ -229,14 +229,15 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
           <h3><i class="mdi-content-send brown-text"></i></h3>
 
           <div class="card-panel" style="font-size:2em">
-              <h3>Meet the Mentor</h3>
-              <img class="responsive-img" src="<%= static_path(@conn, "/images/mattdavis.jpg") %>">
+              <h3>Meet your Guide</h3>
+              <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/mattdavis.jpg") %>">
               <br /><br />
               <div>You will have <span class="red-text text-darken-4">Matt Davis</span> as your <span class="red-text text-darken-4">mentor and guide</span> on your 21 day journey.</div>
               <br />
               Matt has been helping people grow and achieve their goals since 2014.
               <br /> <br />
-              <img class="responsive-img" src="<%= static_path(@conn, "/images/mattflower.jpg") %>">
+              He is a certified Neurolinguistic Programming practitioner and a Desire Coaching Program graduate.
+              <br /> <br />
           </div>
           <br />
         </div>
@@ -298,6 +299,28 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
           </div>
         </div>
       </div>
+      <div class="row hide-on-med-and-down" >
+        <div class="col s2 l2 center testimonial-quote"></div>
+        <div class="col s12 m12 l8 center">
+          <div class="testimonial-quote group right">
+              <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/alex.jpg") %>"><br />
+              <div class="quote-container">
+                  <div>
+                      <blockquote>
+                          <p>"Matt helped me realize that I already had everything I needed to face my fears. Not only did I feel like a capable man, by the end of our sessions I felt like a f***ing superhero.”</p>
+                      </blockquote>
+
+                      <cite><span>Alex Miller</span><br>
+                        Unemployed<br>
+                        Traveling in Europe
+                      </cite>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="card-panel  hide-on-large-only" >
         <div class="row" >
                       <blockquote>
@@ -425,7 +448,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
                 <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
               </div>
               <div class="col l10">
-                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">The Meet the Mentor coaching circle </span>  - The first of 3 group coaching circles, you and your allies (the other men taking the course) will meet the mentor together in a 90 minute video call.  Be prepared to tell your story, declare and commit to your vision and your goal, and hear advice on how to proceed. This is where you meet the men who will be challenging and supporting you through the 21 day challenge.</p>
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">The Meet the Mentor coaching circles </span>  - Each of the 3 weeks begins with a Meet the Mentor coaching circle. You and your allies (the other men taking the course) will meet the mentor together in a 90 minute video call.  Be prepared to tell your story, declare and commit to your vision and your goal for the next week, and hear advice on how to proceed. This is where you meet the men who will be challenging and supporting you through the 21 day challenge.</p>
               </div>
             </div>
             <div class="row">
@@ -433,7 +456,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
                 <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
               </div>
               <div class="col l10">
-                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Two Orientation Calls </span>  - After a week of trials, it's time to regroup and share wisdom.  You and your allies will share war stories from the past week, and learn from each other. Then your mentor will help you make a plan and set out for another week of adventure.
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Three Orientation Calls </span>  - Each week, you have the option to call your mentor and get advice. Receive encouragement, advice or hear the things that are hard to hear.  If you are procrastinating, he'll encourage you to begin. If you're failing, he'll help you learn your lessons. If you're succeeding, he'll ask you how you will celebrate and how you can do more.
               </div>
             </div>
             <div class="row">
@@ -485,25 +508,3 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
     </div>
     <div class="parallax"><img class="responsive-img" src="images/background3.jpg" alt="Unsplashed background img 2"></div>
   </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Mythic Men</h5>
-          <p class="grey-text text-lighten-4">We are a team of growth coaches devoted to reclaiming the power of myth and helping people like you achieve their dreams. We believe as more dreams that become reality the world becomes a better place.</p>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="blue-text text-darken-4" href="https://www.facebook.com/groups/199475370869173/">Join Our Facebook Group</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <li>mattdavis1337@gmail.com</li>
-      </div>
-    </div>
-  </footer>

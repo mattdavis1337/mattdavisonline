@@ -16,7 +16,7 @@
 <body>
 
   <%= render @view_module, @view_template, assigns %>
-
+  <%= render "footer.html" %>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/app.js"></script>
