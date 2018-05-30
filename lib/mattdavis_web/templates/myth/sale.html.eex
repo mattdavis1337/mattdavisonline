@@ -13,7 +13,7 @@
         <h1 class="center strong white-text text-darken-4"></h1><br>
         <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
         <h4 class="center white-text" style="font-weight:bold">Ready to Begin your Quest?</h4>
-        <h4 class="center white-text" style="font-weight:bold">Get 21 Days of Coaching Support for $297</h4>
+        <h4 class="center white-text" style="font-weight:bold">Space is Limited. Act Now.</h4>
       </div>
     </div>
     <div class="parallax"><img class="responsive-img" src="images/bootsonground.jpg" alt="Warm Background"></div>
@@ -22,9 +22,13 @@
   <div class="container">
     <div class="section">
       <div class="row">
-        <h4 class="center black-text" style="font-weight:bold">Your first challenge: </h4>
+        <h4 class="center red-text text-darken-2" style="font-weight:bold">Your first challenge: </h4>
         <h4 class="center black-text" style="font-weight:bold">Text Matt Davis right now.</h4>
-        <h4 class="center black-text" style="font-weight:bold">His Number is (512) 579-8800. Say "I'm in."</h4>
+        <h4 class="center black-text" style="font-weight:bold">His Number is (512) 579-8800. Say "I'm ready."</h4>
+        <br /><br />
+        <h5 class="center black-text" style="font-weight:bold">Matt will ask you some questions to see if you're a good fit for this program.</h5>
+        <h5 class="center black-text" style="font-weight:bold">This program costs $300 to join. A pittance for all this!</h5>
+        <h5 class="center black-text" style="font-weight:bold">This is a brand new program so the price will go UP next time. Get in now!</h5>
       </div>
       <div class="row">
         <div class="col l2 center"></div>
@@ -41,5 +45,3 @@
       </div>
     </div>
   </div>
-
-  

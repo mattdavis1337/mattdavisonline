@@ -13,7 +13,7 @@
         <h3 class="center strong yellow-text text-lighten-4 hide-on-large-only">Join the Quest for The Master Key</h3><br>
         <div class="row center hide-on-med-and-down">
 
-           <h5 class="col s12 white-text text-darken-4 ">Destroy doubt and indecisiveness.</h5><h5 class="col s12 white-text text-darken-4 "><span class="red-text text-darken-2">Unlock</span> your unique drive and motivation through <span class="red-text">story and play.</span></h5><h5 class="col s12 white-text text-darken-4 "> Start living your dream.</h5>
+           <h5 class="col s12 white-text text-darken-4 ">Destroy doubt and indecisiveness.</h5><h5 class="col s12 white-text text-darken-4 "><span class="red-text text-darken-2">Unlock</span> your unique drive and motivation through <span class="red-text">story and play.</span></h5><h5 class="col s12 white-text text-darken-4 "> Start living your dream. And have some damn fun!</h5>
 
           <h5 class="col s12 white-text text-darken-4">Space is limited. Begins June 9</h5>
         </div>
@@ -44,7 +44,7 @@
           <h4 class="col s12 black-text text-darken-4"> <span class="red-text text-darken-4" style="font-size:1.1em">Quest for the Master Key</span></h4>
           <h4 class="col s12 black-text text-darken-4"><span class="blue-text text-darken-4" style="font-size:1.1em">21 Day Goal Accelerator Program for Men<span> </h4>
           <h5 class="col s12 black-text text-darken-4">Use Joseph Campbell's <span class="red-text text-darken-4"  style="font-size:1.1em">Hero's Journey</span> to speak to your Inner King</h5>
-          <h5 class="col s12 black-text text-darken-4">Find your personal <span class="red-text text-darken-4"  style="font-size:1.1em">Master Key</span> - the combination of beliefs, mindsets, behaviors, weapons and environments that unlock your full potential in any situation</h5>
+          <h5 class="col s12 black-text text-darken-4">Find your personal <span class="red-text text-darken-4"  style="font-size:1.1em">Master Key</span> - the combination of beliefs, mindsets, behaviors, weapons and environments that <span class="red-text text-darken-4"  style="font-size:1.1em">unlock your full potential</span> in any situation</h5>
       </div>
       <div class="row center">
         <hr>
@@ -125,9 +125,9 @@
           <h4 class="brown-text">Get 100% Clear on Your Personal Vision</h4>
           <br \>
           <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
-            After you complete your 1 on 1 <span class="red-text text-darken-4">Call to Adventure</span>, it is time to  <span class="red-text text-darken-4">Meet the Mentor</span>.
-            <br /><br />
             At the beginning of the most satisfying stories, the hero meets a mentor who prepares the hero to face the unknown and accept the call to adventure.
+            <br /><br />
+            After you complete your 1 on 1 <span class="red-text text-darken-4">Call to Adventure</span>, it is time to  <span class="red-text text-darken-4">Meet the Mentor</span>.
             <br /><br />
             The <span class="red-text text-darken-4">Meeting the Mentor</span> coaching call is where you will have an important opportunity to reveal your honest truth about what you want, what's holding you back, and get feedback and coaching on how to proceed.
             <br /><br />
@@ -136,6 +136,43 @@
           </p>
         </div>
       </div>
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Can You Really Change Your Life in 21 Days?</h4>
+          <br />
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            There's a rumor that it only takes 21 days of repetition to form a new habit that will last forever. Unfortunately that statement is fake.
+            <br /><br />
+            You CAN make major changes in 21 days, but you have to do it right for it to stick.
+            <br /> <br />
+            In truth, you have to make a STRONG DECLARATION to yourself that things are different this time.  AND you have to fight through resistance 3-5 times and prove to yourself that you've got what it takes.
+            <br /><br />
+            When you first start, you'll be happy and excited about making a change for the better. You'll have the feeling of "This is Easy!".
+            <br /><br />
+            The hard part is when you enter the realm of <span class="red-text text-darken-3" style="font-weight:bold">Trials & Failure</span>.  Look at the Hero's Journey map.  This is where you need a HELPER.  You've got to have someone who believes in you and who is going to call you on your bull if you start to go back to the old way.
+            <br /><br />
+            It is critical that you <span class="red-text text-darken-3" style="font-weight:bold">Win 5 Battles with your Demons of Resistance</span>.   You have to be ARMED and PUSH THROUGH resistance and win these battles. And then you need to tell your allies about your VICTORY.  We will document your victory in the archives for posterity.
+            <br /><br />
+            At the end, the new way feels like second nature.  You'll have the feeling of "This is Easy!" again.  But be warned! You are still not totally in the clear yet. You have to watch out for the <span class="red-text text-darken-3">Succubus of Success</span>
+            <br /><br />
+            <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/succubus.jpg") %>">
+            <br /><br />
+            Yes she's hot.  And she'll try to convince you that you're <span class="red-text text-darken-3" style="font-weight:bold">some kind of amazing rock star who doesn't have to try anymore.</span> This is dangerous and you'll go back to your old ways if you aren't careful.
+            <br /><br />
+            This is where other men come in.  This part is encoded in myth in The Odyssey.
+            <br /><br />Odysseus had his crew tie him to the mast and put wax in their ears so he could hear the sirens but couldn't do anything about it.
+            <br /> <br />
+            If it weren't for his crew, he would have SAILED HIS SHIP INTO ROCKS and turned him and his crew into skeletons.
+            <br /><br />
+            <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/odysseus.jpg") %>">
+            <br /><br />
+            If I have to I will literally tie you up and put wax in your ears if that's what it takes. You will have a CREW of ALLIES who are dedicated to seeing you win.
+          </p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col l2 center"></div>
         <div class="col s12 m12 l8 center">
@@ -217,33 +254,6 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
         </div>
       </div>
 
-      <div class="row">
-        <div class="col l2 center"></div>
-        <div class="col s12 m12 l8 center">
-          <h3 ><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="brown-text">Can You Change Your Life in 21 Days?</h4>
-          <br />
-          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
-            If you are using this program to make a major change in your life, you will need to form a new habit or routine to support the change.
-            <br /><br />
-            There's a rumor that it only takes 21 days of repetition to form a new habit that will last forever.  Unfortunately it isn't that simple.
-            <br /><br />
-            You CAN make major changes in 21 days, but you have to do it right for it to stick. This program uses a model developed by Tom Bartow of Edward Jones that more accurately reflects <span class="red-text text-darken-3" style="font-weight:bold">current science on habit formation.</span>
-            <br /><br />
-            In truth, there are <span class="red-text text-darken-3" style="font-weight:bold">3 phases to habit formation</span>
-            <br /><br />
-            Phase 1 of habit formation is when you are excited, inspired and enthusiastic about making a big change. This is the easy part. In the Quest for the Master Key Program, this happens after the Call to Adventure.  You will make a strong declaration about what you want to accomplish in 21 days and where you want your life to be in 5 years. You will take action. You will have a feeling of "This is Easy".
-            <br /><br />
-            Phase 2 is a <span style="font-weight:bold">Series of Battles</span>. After the initial inspiration fades, the new way of being becomes more difficult. You will know <span class="red-text text-darken-3" style="font-weight:bold">what you should</span> do. You got very clear on that with your Mentor. You will know <span class="red-text text-darken-3" style="font-weight:bold">what you said</span> you would do. Yet you will feel the pressure of old habits. <span class="red-text text-darken-3" style="font-weight:bold">You will be battling your Inner Demons.</span> Luckily we named those demons, and you are armed and equipped to fight them.
-            <br /><br />
-            It is critical that you <span class="red-text text-darken-3" style="font-weight:bold">Win 5 Battles</span> and tell your allies about it.  You have to push through resistance and win these battles. Direct your attention where it needs to go. Ask for help. Ask yourself "How will I feel if I do the old behavior?" and "How will I feel if I do the new behavior?" This sounds simple, but it is not easy. Your allies and mentor can help you when you are struggling so you can break through resistance and emerge victorious.
-            <br /><br />
-            Phase 3 is when the behavior feels like second nature.  You'll have the feeling of "This is Easy" again.  You are still not totally in the clear yet. You still need to watch out for disruptions in your routine.  If you are not getting the results you want, you might think "This isn't working" and give up.  Or you may let your ego run away with you and decide that you are special and don't need to work as hard as others, so you let your routine slip. This is called the <span class="red-text text-darken-3">Seduction of Success</span>
-            <br /><br />
-            Having a group of men committed to your success is critical.  Being supported by other men is the best way to grow into your full potential.
-          </p>
-        </div>
-      </div>
 
 
       <!---
@@ -276,15 +286,15 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
 
           <div class="card-panel" style="font-size:2em">
               <h3>Meet your Guide</h3>
-              <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/mattdavis.jpg") %>">
+              <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/mattsmile.jpg") %>">
               <br /><br />
               <div>You will have <span class="red-text text-darken-4">Matt Davis</span> as your <span class="red-text text-darken-4">mentor and guide</span> on your 21 day journey.</div>
               <br />
-              Matt has been helping people grow and achieve their goals since 2009.
+              You are so lucky you don't even know.
               <br /> <br />
-              He is a certified Neurolinguistic Programming practitioner and a Desire Coaching Program graduate.
+              Matt is a rapper that knows hypnosis and jiu jitzu. He's had a Top Secret security clearance in the US Air Force, and he has studied growth and mindhacking for years. He can call you on your bulljunk in a heartbeat and help you turn your life around stat.
               <br /> <br />
-              He held a Top Secret Security Clearance in the US Air Force. There, he led a fitness program for hundreds of people. He helped countless people achieve their fitness goals.  He was voted Airman of the Year two years in a row, beating out thousands of other young men and women who wanted that recognition. He knows what it takes to succeed and he knows how to help you develop your strengths.
+              He's also pretty cool and will be nice to you most of the time too. Be prepared for Grit and Loving Challenge!
           </div>
           <br />
         </div>
@@ -316,7 +326,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
               <div class="quote-container">
                   <div>
                       <blockquote>
-                          <p>"But that third meeting, the coming together of being rung like a bell. It feels like a perfect arc through a hairpin turn."</p>
+                          <p>"It felt like a perfect arc through a hairpin turn."</p>
                       </blockquote>
                       <cite><span>David L. Swedlow</span><br>
                           Manager of Application Development<br>
@@ -354,7 +364,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
               <div class="quote-container">
                   <div>
                       <blockquote>
-                          <p>"Matt helped me realize that I already had everything I needed to face my fears. Not only did I feel like a capable man, by the end of our sessions I felt like a f***ing superhero.”</p>
+                          <p>"Not only did I feel like a capable man, by the end of our sessions I felt like a f***ing superhero.”</p>
                       </blockquote>
 
                       <cite><span>Alex Miller</span><br>
@@ -520,7 +530,7 @@ You’re constantly seeing yourself improve. You’re grateful and appreciate th
                 <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
               </div>
               <div class="col l10">
-                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Closing Ceremony</span>  - At the end of  21 days, we will regroup and discuss how it went. Did you learn the location of your master key? Or is there more work to do? Were we wounded? Did we gain treasure?  How do we become stronger men from this experience? By this point your personal mythos is becoming well-documented, and you understand how this adventure fits in to your overall destiny.
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Closing Ceremony</span>  - At the end of 21 days, we will regroup and CELEBRATE LIKE KINGS. Did you find your Master Key? Or is there more work to do? Were you wounded? Did you gain treasure?  How do we become stronger men from this experience? How does this fit into your Personal Mythos and Destiny?
               </div>
             </div>
           </div>
