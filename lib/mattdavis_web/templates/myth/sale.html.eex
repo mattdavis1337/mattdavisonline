@@ -13,7 +13,6 @@
         <h1 class="center strong white-text text-darken-4"></h1><br>
         <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
         <h4 class="center white-text" style="font-weight:bold">Ready to Begin your Quest?</h4>
-        <h4 class="center white-text" style="font-weight:bold">Space is Limited. Act Now.</h4>
       </div>
     </div>
     <div class="parallax"><img class="responsive-img" src="images/bootsonground.jpg" alt="Warm Background"></div>
@@ -26,9 +25,8 @@
         <h4 class="center black-text" style="font-weight:bold">Text Matt Davis right now.</h4>
         <h4 class="center black-text" style="font-weight:bold">His Number is (512) 579-8800. Say "I'm ready."</h4>
         <br /><br />
-        <h5 class="center black-text" style="font-weight:bold">Matt will ask you some questions to see if you're a good fit for this program.</h5>
-        <h5 class="center black-text" style="font-weight:bold">This program costs $300 to join. A pittance for all this!</h5>
-        <h5 class="center black-text" style="font-weight:bold">This is a brand new program so the price will go UP next time. Get in now!</h5>
+        <h5 class="center black-text" style="font-weight:bold">Matt will call you back and ask you about your goals. This is to see if you are good fit for the program and if this program is what you want.</h5>
+        <h5> The cost for this 4 week program is currently $400.  This program is new so the price will go up as it develops. This is a chance to get a lot of support and growth for a reasonable price. Don't delay!</h5>
       </div>
       <div class="row">
         <div class="col l2 center"></div>
@@ -37,7 +35,7 @@
             <h3>The Portal is Open</h3>
             <img  class="responsive-img" src="<%= static_path(@conn, "/images/portal.jpg") %>">
             <br /><br />
-            <div>Remember, life is meant to be PLAY!</div>
+            <div>"As I heal, so I heal the world" -  Michael Hecht</div>
             <div></div>
           </div>
         </div>
