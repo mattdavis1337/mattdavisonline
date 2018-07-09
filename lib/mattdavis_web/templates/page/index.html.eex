@@ -1,37 +1,36 @@
-<nav class="white" role="navigation">
-  <div class="nav-wrapper container">
-    <span class="brand-logo">Big Man Coaching</span>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="<%= myth_path(@conn, :index)%>">Growth Work for Men</a></li>
-    </ul>
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
-
 <div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
       <br><br>
-      <h1 class="center white-text text-lighten-1">Do you know your personal destiny?</h1><br>
+      <h1 class="center white-text text-lighten-1">Hire an Engineering Team for your Consciousness</h1><br>
       <div class="row center">
-        <h5 class="col s12 light"> ( It's ok. Most men say no. )</h5>
+        <h5 class="col s12 light">UI Humanics is peak-mindset consulting and goal coaching</h5>
       </div>
       <!-- div class="row center">
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Yes</a>
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">No</a>
       </div-->
+
+
       <div class="row center">
-        <h5 class="col s12 light"> <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmatt.davis.775%2Fposts%2F10215985241601091&width=500" width="500" height="262" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></h5>
+        <div class="col s12">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">The next Quest for the Master Key leaves the village in: <span id="demo"></span><br>
+
+
+
+                  <a href="<%= myth_path(@conn, :index)%>">Read More</a></span>
+              <p></p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <br><br>
 
     </div>
   </div>
-  <div class="parallax"><img src="images/background1-warm.jpg" alt="Warm Background"></div>
+  <div class="parallax"><img src="images/orange_paper.jpg" alt="Warm Background"></div>
 </div>
 
 
@@ -45,7 +44,7 @@
           <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
           <h5 class="center">Do You Have a Clear Vision?</h5>
 
-          <p class="light">If you haven't done the work to get clear on what you want, it makes total sense that you don't have it. Big Man helps you get clear on what YOU truly want. It's time to get real and start doing this for yourself and nobody else.  </p>
+          <h5 class="light">UI Humanics helps you get clear on what YOU truly want. Beyond goals. Do this for yourself and nobody else.  </h5>
         </div>
       </div>
 
@@ -54,7 +53,7 @@
           <h2 class="center brown-text"><i class="material-icons">sentiment_dissatisfied</i></h2>
           <h5 class="center">Then What's Stopping You?</h5>
 
-          <p class="light">If you know what you want, ask yourself "Why don't I have it already?".  Big Man helps you find limiting beliefs, excuses and fear that are holding you back.  Look your demons in the eye so you know what to do next.</p>
+          <h5 class="light">Notice the limiting beliefs and excuses that are holding you back. We help you make a plan to overcome them.</h5>
         </div>
       </div>
 
@@ -63,48 +62,21 @@
           <h2 class="center brown-text"><i class="material-icons">whatshot</i></h2>
           <h5 class="center">Grit and Loving Challenge.</h5>
 
-          <p class="light">Matt has spent years working with all types of men. He knows how to challenge you in a way that feels good.  No shaming, no fake enthusiasm.  Pure honesty that cuts through the haze and loving challenge that gets your inner fire burning again.</p>
+          <h5 class="light">Pure honesty that cuts through the haze and loving challenge that keeps your inner fire burning.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col s12">
+        <div class="card white darken-1">
+          <div class="card-content black-text">
+            <span class="card-title">Read <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@mattdavis_3522/the-five-d-words-that-make-some-people-unstoppable-907b97262a99">The Five D-Words that Make Some People Unstoppable</a></span>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
 
   </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h1 class="col s12 ">The world needs its men to GET BIGGER</h1>
-      </div>
-    </div>
-  </div>
-  <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
-</div>
-
-<div class="container">
-  <div class="section">
-
-    <div class="row">
-      <div class="col s12 center">
-        <h3><i class="mdi-content-send brown-text"></i></h3>
-        <h4>Contact Us</h4>
-        <p class="left-align light">Matt Davis is a personal goal and accountability coach.  He uses his life experience and training as a coach and mentor to help men achieve their goals.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-
-      </div>
-    </div>
-  </div>
-  <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
