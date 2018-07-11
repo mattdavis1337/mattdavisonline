@@ -30,17 +30,30 @@
   </script>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="white" role="navigation" >
     <div class="nav-wrapper container">
-    </img><span class="brand-logo"><a href="<%= page_path(@conn, :index) %>"><img src="images/uilogo.png" alt="UI Logo" height="50px" style="margin-right:15px"></a><span class="hide-on-med-and-down">UI Humanics</span></span>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="<%= myth_path(@conn, :index)%>">Quest for the Master Key</a></li>
-      </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="<%= page_path(@conn, :index) %>">Home</a></li>
-        <li><a href="<%= myth_path(@conn, :index)%>">Quest for the Master Key</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <span class="brand-logo hide-on-med-and-down">
+      <a href="<%= page_path(@conn, :index) %>">
+        <img src="images/uilogo.png" alt="UI Logo" height="50px" style="margin-right:15px">
+      </a>
+      <span class="hide-on-med-and-down">UI Humanics</span>
+    </span>
+
+    <span class="brand-logo hide-on-large-only">
+      <a href="<%= page_path(@conn, :index) %>">
+        <img src="images/uilogo.png" alt="UI Logo" height="20px" style="margin-right:15px">
+      </a>
+      <span style="font-size:.6em">UI Humanics</span>
+    </span>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="<%= myth_path(@conn, :index)%>">Quest for the Master Key</a></li>
+    </ul>
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="<%= page_path(@conn, :index) %>">Home</a></li>
+      <li><a href="<%= myth_path(@conn, :index)%>">Quest for the Master Key</a></li>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <%= render @view_module, @view_template, assigns %>

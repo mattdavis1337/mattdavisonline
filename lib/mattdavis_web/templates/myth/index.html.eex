@@ -5,12 +5,15 @@
         <br />
         <h1 class="center strong white-text text-lighten-4 hide-on-med-and-down">Quest for The Master Key</h1><br>
         <h3 class="center strong white-text text-lighten-4 hide-on-large-only">Quest for The Master Key</h3><br>
+        <h5 class="col s12 white-text text-lighten-3 center hide-on-large-only" style="font-weight:bold">Feel relief from doubt. Get help making firm decisions.</h5>
+
         <div class="row center hide-on-med-and-down">
           <h5 class="col s12 yellow-text text-lighten-4" style="font-weight:bold">Feel relief from doubt. Get help making firm decisions.</h5>
           <h5 class="col s12 yellow-text text-lighten-4" style="font-weight:bold">Alchemize your reluctance and resistance into power.</h5>
           <h5 class="col s12 yellow-text text-lighten-4" style="font-weight:bold">Get help building accountability structures so you follow through.</h5>
           <h5 class="col s12 yellow-text text-lighten-3" style="font-weight:bold">Space is limited. Next wave begins August 1</h5>
         </div>
+        <br />
         <div class="row center">
           <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
         </div>
@@ -20,10 +23,9 @@
   </div>
 
   <div class="row center hide-on-large-only">
-    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Feel relief from doubt. Get help making firm decisions.</h5>
-    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Alchemize your reluctance and resistance into power.</h5>
-    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Get help building accountability structures so you follow through.</h5>
-    <h5 class="col s12 orange-text text-lighten-1" style="font-weight:bold">Space is limited. Next wave begins August 1</h5>
+    <h5 class="col s12 purple-text text-lighten-3">Alchemize your reluctance and resistance into power.</h5>
+    <h5 class="col s12 purple-text text-lighten-3">Get help building accountability structures so you follow through.</h5>
+    <h5 class="col s12 purple-text text-lighten-1">Space is limited. Next wave begins August 1</h5>
   </div>
 
   <div class="container">

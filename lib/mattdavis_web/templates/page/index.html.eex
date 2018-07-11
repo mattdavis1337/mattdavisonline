@@ -2,10 +2,10 @@
   <div class="section no-pad-bot">
     <div class="container">
       <br><br>
-      <h1 class="center white-text text-lighten-1 hide-on-med-and-down">Get to your peak mindset<br />Every day</h1><br>
-      <h5 class="center white-text text-lighten-1 hide-on-large-only">UI Humanics is like an engineering team for your personal development</h1><br>
+      <h1 class="center white-text text-lighten-1 hide-on-med-and-down">Get to your peak mindset<br />every day</h1><br>
+      <h5 class="center white-text text-lighten-1 hide-on-large-only">Get to your peak mindset<br />every day</h1><br>
       <div class="row center">
-        <h5 class="col s12 light">Working with UI Humanics is like having an engineering team for your personal development</h5>
+        <h5 class="col s12 light">UI Humanics is like an engineering team for your personality</h5>
       </div>
 
       <!-- div class="row center">
@@ -13,7 +13,7 @@
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">No</a>
       </div-->
 
-      <div class="row center">
+      <div class="row center hide-on-med-and-down">
         <div class="col s12">
           <div class="card white darken-1">
             <div class="card-content black-text">
@@ -24,6 +24,20 @@
           </div>
         </div>
       </div>
+
+      <div class="row center hide-on-large-only">
+        <div class="col s12">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title" style="font-size:.9em">Join the Quest for the Master Key: <span id="demo" class="strong"></span><br>
+                  <a href="<%= myth_path(@conn, :index)%>">Read More</a></span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
   <div class="parallax"><img src="images/teal_paper.jpg" alt="Warm Background"></div>
