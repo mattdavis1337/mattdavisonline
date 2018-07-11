@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br />
+        <h1 class="center strong orange-text text-lighten-4 hide-on-med-and-down">Quest for The Master Key</h1><br>
+
+        <h3 class="center strong orange-text text-lighten-4 hide-on-large-only">Quest for The Master Key</h3><br>
+        <div class="row center hide-on-med-and-down">
+          <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Feel relief from doubt. Get help making firm decisions.</h5>
+          <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Alchemize your reluctance and resistance into power.</h5>
+          <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Get help building accountability structures so you follow through.</h5>
+          <h5 class="col s12 orange-text text-lighten-1" style="font-weight:bold">Space is limited. Next wave begins August 1</h5>
+        </div>
+        <div class="row center">
+          <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img  class="responsive-img" src="images/starscape.jpg" alt="Warm Background"></div>
+  </div>
+
+  <div class="row center hide-on-large-only">
+    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Feel relief from doubt. Get help making firm decisions.</h5>
+    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Alchemize your reluctance and resistance into power.</h5>
+    <h5 class="col s12 orange-text text-lighten-3" style="font-weight:bold">Get help building accountability structures so you follow through.</h5>
+    <h5 class="col s12 orange-text text-lighten-1" style="font-weight:bold">Space is limited. Next wave begins August 1</h5>
+    <h5 class="col s12 orange-text text-lighten-1" style="font-weight:bold">Space is limited. Next wave begins August 1</h5>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <h3>What could you accomplish in one month?</h3>
+      </div>
+      <div class="row center">
+        <img class="responsive-img" src="images/herojourney.png">
+      </div>
+      <div class="row center">
+          <h4 class="col s12 black-text text-darken-4"> <span class="red-text text-darken-4" style="font-size:1.1em">Quest for the Master Key</span></h4>
+          <h4 class="col s12 black-text text-darken-4"><span class="blue-text text-darken-4" style="font-size:1.1em">One Month Goal Accelerator Program for Men<span> </h4>
+          <h5 class="col s12 black-text text-darken-4">Get coaching support to set ambitious goals.</h5>
+          <h5 class="col s12 black-text text-darken-4">Join a group of men who will help you see yourself more clearly.</h5>
+          <h5 class="col s12 black-text text-darken-4">Find your personal <span class="red-text text-darken-4"  style="font-size:1.1em">Master Key</span> - the combination of beliefs, mindsets, behaviors, weapons and environments that <span class="red-text text-darken-4"  style="font-size:1.1em">unlock your full potential</span> in any situation</h5>
+      </div>
+      <div class="row center">
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Get 100% Clear on Your Personal Vision</h4>
+          <br \>
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            At the beginning of the most satisfying stories, the hero meets a mentor who prepares the hero to face the unknown.
+            <br /><br />
+            Your Quest for the Master key begins with the <span class="red-text text-darken-4">Call to Adventure</span>.
+            <br /><br />
+            This is a 1 on 1 coaching call where you will have an important opportunity to reveal your honest truth about what you want, what's holding you back, and to make a plan for the month.
+            <br /><br />
+            Your mentor will help you <span class="red-text text-darken-4">overcome resistance</span> so you can be <span class="red-text text-darken-4">armed and equipped</span> for this one month journey.
+            <br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  PARALLAX 2 ********************************************* -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">Your Journey Begins Here</h1><br>
+          <h3 class="center strong white-text text-darken-4 hide-on-large-only">Your Journey Begins Here</h3><br>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img  class="responsive-img"  src="images/labyrinth.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col l2 center"></div>
+    <div class="col s12 m12 l8  center">
+
+      <div class="card-panel" style="font-size:2em">
+        <div class="card-panel teal" style="font-size:2em">
+          <h3 class="white-text">Quest for the Master Key</h3>
+        </div>
+          <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+          <div>You will have <span class="red-text text-darken-4">One Month</span> to complete your quest and find your personal master key.</div>
+          <br />
+          <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h4 class="brown-text">Can You Really Change Your Life in One Month?</h4>
+          <br />
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            There's a rumor that it only takes one month of repetition to form a new habit that will last forever. Unfortunately this is not true.
+            <br /><br />
+            You CAN make major changes in 30 days, but you have to do it right for it to stick.
+            <br /> <br />
+            In truth, you have to make a STRONG DECLARATION to yourself that things are different this time.  AND you have to fight through resistance 3-5 times and prove to yourself that you've got what it takes.
+            <br /><br />
+            When you first start, you'll be happy and excited about making a change for the better. You'll have the feeling of "This is Easy!".
+            <br /><br />
+            The hard part is when you enter the realm of <span class="red-text text-darken-3" style="font-weight:bold">Trials & Failure</span>.  Look at the Hero's Journey map.  This is where you need a HELPER. That's what this program provides.
+            <br /><br />
+            You've got to have a group who believes in you. Someone who reminds you what you said you wanted for yourself when you start to waver.
+            <br /><br />
+            At this stage it is critical that you <span class="red-text text-darken-3" style="font-weight:bold">Win 5 Battles with your Demons of Resistance</span>.  This metaphor will help you remember what to do when it is challenging.
+            <br /><br />
+            Whether you succeed or fail, it is important to tell your allies so they can help you. There is huge benefit in being vulnerable enough to be witnessed in both victory and defeat.
+            <br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l2 center"></div>
+          <div class="col s12 m12 l8 center">
+            <h4 class="brown-text">Watch out for the Succubus of Success!</span></h4>
+            <br />
+            <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/succubus.jpg") %>">
+            <br />
+            <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            <br />
+              Yes she's hot.  After some success, probably during week 3, The SoS will try to convince you that you're <span class="red-text text-darken-3" style="font-weight:bold">some kind of amazing rock star who doesn't have to try anymore.</span> If you listen to her, you'll go back to your old ways.
+              <br /><br />
+              This is where other men come in to remind you what you want.  This lesson is encoded in myth in The Odyssey.
+              <br /><br />
+              Odysseus ordered his crew tie him to the mast of his ship and put wax in their ears. He could hear the enrapturing call of the Sirens but he couldn't steer his ship toward them no matter how much he wanted to.
+              <br /> <br />
+              If it weren't for his plan, he would have SAILED HIS SHIP INTO ROCKS and killed himself and his crew. This story is a warning. You can't go as far alone as you can with a group.
+              <br /><br />
+              <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/odysseus.jpg") %>">
+              <br /><br />
+              </p>
+              If we have to we will (consentually) tie you up and put wax in your ears if that's what it takes. You will have a CREW of ALLIES who are dedicated to seeing you win.
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Learn the Deep Power of Myth and Metaphor</h4>
+          <br />
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            Geniuses like Carl Jung and Joseph Campbell have shown how human myths speak to us and move us deeply.
+            <br /><br />
+            The <span class="red-text text-darken-4">Hero's Journey</span> is one of the most potent mythic structures.
+            <br /><br />
+            At the end of each week we meet as a group to look at the mythical elements at play in our own lives.
+            <br /><br />
+            You will learn how ancient archetypes like <span class="red-text text-darken-4">The King</span>, <span class="red-text text-darken-4">The Warrior</span> and <span class="red-text text-darken-4">The Dragon</span> can give you influence over challenging areas of your life like finances, relationships and self confidence.
+            <br /><br />
+            You will begin learning and documenting your <span class="red-text text-darken-4">Personal Mythos</span>. You can use this over and over again to succeed.
+          </p>
+        </div>
+      </div>
+
+<!---
+From BH:
+One of the core learning styles is “imagining,” and it’s something that few people allow themselves to do enough. Imagining and fantasizing are learned skills, which can also be like muscles that atrophy. If you don’t develop these muscles, you’ll lack the creativity and excitement of pursuing crazy dreams and ideals. You’ll “grow-up” as they say and settle for reality as society and the norms around you have deemed-it.
+
+Instead of such a bleak and uninspiring existence, you want to spend a great deal of time fantasizing about your future. You want to dream big and dream creatively. You want it to be fun and playful. Set no boundaries on your ideals and what you imagine.
+
+Dan Sullivan:
+Your future should always be bigger than your past
+
+Big picture never been bigger
+So tell me when you pull the trigga
+
+According to psychological research, the anticipation of an event is almost always more powerful than the event itself. Both positive and negative events are generally more emotionally-charged in your head than the actual experience ends up being.
+
+Very quickly, we adapt to our new experience and the event itself is underwhelming compared to how we imagined it to be.
+
+Because we adapt so quickly, it’s easy to take for granted where we currently are. Moreover, because our ideals and dreams are like a horizon which is constantly moving — we never reach our ideals. The horizon always moves, no matter where you are. It’s the direction, not the destination.
+
+If your goals are not specific and measurable, then you won’t be able to measure your progress. If you can’t clearly discern the progress you’re making:
+
+you won’t know where you actually are
+you won’t experience the joy, gratitude, and confidence of growth
+if you don’t enjoy the the gratitude and confidence of growth, you won’t operate as well in the future and you won’t set bigger targets to strive for
+
+motivation involves three components:
+
+the value you place on your goal
+your belief that specific behaviors will actually facilitate the outcomesyou desire
+your belief in your own ability to successfully execute the behaviors requisite to achieving your goals
+
+As your happiness, confidence, and hope increase, your motivation will increase. This motivation comes because you expect to achieve your goals and you highly value those goals. As you become more confidence as a person, you’ll stop setting goals that society has placed on you.
+
+Your goals will come from inside and be uninhibited by the standards and expectations of those around you. Instead, you’ll purposefully surround yourself with better mentors, teachers, and collaborators, which will allow your dreams and ideals to expand far beyond what you could conjure-up on your own. Psychologists call this “The Transforming-Self,” and it’s the highest level of conscious evolution.
+
+You’re constantly seeing yourself improve. You’re grateful and appreciate that progress. You spend just as much time soaking-in the Gains and you do imagining and indulging in the dreams. You then use your gains and the confidence you’ve built to get back to the playful and fantasizing process of imagining new ideals!
+
+--->
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">The Only Way to Increase Self-Confidence</h4>
+          <br />
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            The only real way to increase self-confidence is to succeed at something.
+            <br /><br />
+            This is your chance to <span class="red-text text-darken-4">set a challenging goal</span>, join a group committed to your success, and <span class="red-text text-darken-4">follow through on what you said</span> you would do.
+            <br /><br />
+            When you do this, your faith in yourself will increase. Your doubts will vanish. You'll be ready to do it again.
+            <br /><br />
+            You are about to <span class="red-text text-darken-4">cross the threshold</span> and enter the realm of trials and failures, and death and rebirth.
+            <br /><br />
+            You will learn to let go of the parts of yourself that are no longer serving you, and to be reborn in a new, more confident form.
+          </p>
+        </div>
+      </div>
+
+
+
+      <!---
+      Phase 1: THE HONEYMOON
+
+      This phase of habit formation is characterized by the feeling of “this is easy.” As all married people will tell you, at some point even the greatest honeymoon must end. The honeymoon phase is usually the result of something inspiring. For example, a person attends a highly motivational conference, and for the first few days after the conference the individual is making positive changes in his or her life.
+
+      Phase 2: THE FIGHT THRU
+
+      Inspiration fades and reality sets in. A person finds himself struggling with the positive habit completion and old habits seem to be right around the corner. The key to moving to the third phase of habit formation is to win 2 or 3 “fight thru’s.” This is critical. To win the fight thru, use the following techniques:
+
+      RECOGNIZE: Recognition is essential for winning the fight thru. When you have entered the fight through, simply say to yourself, “I have entered the fight thru, and I need to win a few to move past this.” Winning each fight thru will make it easier to win the next. Conversely, when you choose to lose a fight thru, you make it easier to lose the next one.
+      ASK 2 QUESTIONS: “How will I feel if I do this?” and “How will I feel if I don’t do this?” Bring EMOTION into the equation. Let yourself feel the positive in winning the fight thru and the negative in losing.
+      LIFE PROJECTION: If the above 2 techniques haven’t moved you to action, then imagine in great detail how your life will be in 5 years if you do not begin making changes. Be totally honest with yourself, and allow yourself to feel what life will be like if the changes are not made.
+      Phase 3: SECOND NATURE
+
+      Entering second nature is often described by feelings of “getting in the groove.” Once in second nature, the following are 3 common interruptions that will send a person back to the fight thru:
+
+      THE DISCOURAGEMENT MONSTER: An individual allows negative results discourage him or her into thinking, “This isn’t working, and there is nothing I can do.”
+      DISRUPTIONS: An individual experiences significant change to his or her current pattern (e.g., vacations, holidays, illness, weekends).
+      SEDUCTION OF SUCCESS: An individual begins to focus on positive results and begins to think, “I’m the special one. I have finally figured out how to have great results with not so great process.”
+      If a person experiences an interruption that sends him or her back to the fight thru, winning 2 or 3 fight thru’s will bring him or her back to second nature.
+
+      --->
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+
+          <div class="card-panel" style="font-size:2em">
+              <h3>Meet your Guide</h3>
+              <img class="responsive-img" style="border: 3px solid #9CC1D3;" src="<%= static_path(@conn, "/images/mattsmile.jpg") %>">
+              <br /><br />
+              <div>You will have <span class="red-text text-darken-4">Matt Davis</span> as your <span class="red-text text-darken-4">mentor and guide</span> on your one month journey.
+                <br /> <br />
+                "I grew up in a prototypical masculine environment. I learned to be strong, aloof, distant, structured and independent.  I was very effective because I was very discipined and structured. Very masculine. I made a lot of money, I had a lot of nice things.  But deep down I was unhappy.
+                <br /><br />
+                The problem is that I had almost no access to my feelings.  I could feel anger and I could feel excitement but that was it. I didn't cry for 20 years. I barely had any relationship with my family. Relationships with women were distant, stilted and codependent. The truth was I was deeply lonely and didn't realize it.
+                <br /> <br />
+                I woke up one morning and I knew I couldn't continue this way. I quit my job suddenly with no backup plan. I became homeless. I traveled. I got into meditation and hypnosis. I learned to play piano and how to rap.  I started playing Authentic Relating Games. I volunteered for 3 years in Austin as an Authentic Relating facilitator. I helped hundreds of people learn to connect more deeply with each other. I learned about my own feelings and how to communicate those.
+                <br /><br />
+                I became a certified Circling facilitator. Circling is like relational meditation. It's relating in the moment, and learning to relate emotions to other people.  I started practicing orgasmic meditation, and have lived in a community house for the past 18 months. That means I'm constantly in connection with others. I've learned a lot about setting boundaries, entering and exiting conflict with others in a loving way, and saying what I think, and getting what I want without hurting anyone.
+                <br /> <br />
+                Now I'm working to balance the masculine and feminine energies within myself. I have a wonderful sexy woman in my life and we are exploring the depths of connection available in relationship.
+                <br /><br /> I'm learning to set up structure and discipline in a way that feels good, so I can be more effective.  The more effective and efficient I can be, the more positive benefit I can bring to the planet. I want the world to be a place where everybody knows how to get all of their needs met and we can all give and receive in a loving way. This doesn't mean that we are always happy, but it does mean that we are always compassionate and courageous in our dealings with others.
+                <br /> <br />
+                I love working with men who are discovering or rediscovering the power of the masculine and feminine energies alive within them.  Balance is important!"
+                <br /><br />
+                I hope you join me on this journey and I look forward to meeting you and hearing your story.
+                <br /><br />
+                - Matt Davis
+              </div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="row hide-on-med-and-down" >
+        <div class="col s2 l2 center testimonial-quote"></div>
+        <div class="col s12 m12 l8 center">
+          <div class="testimonial-quote group right">
+              <img src="<%= static_path(@conn, "/images/brave.jpg") %>">
+              <div class="quote-container">
+                  <div>
+                      <blockquote>
+                          <p>"I felt my confidence to be a great man grow through working with Matt."</p>
+                      </blockquote>
+                      <cite><span>Brave Legend Pietri</span><br>
+                          Relationship Coach<br>
+                          Alchemy of We
+                      </cite>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row hide-on-med-and-down" >
+        <div class="col s2 l2 center testimonial-quote"></div>
+        <div class="col s12 m12 l8 center">
+          <div class="testimonial-quote group left">
+              <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/thomas.jpeg") %>"><br />
+              <div class="quote-container">
+                  <div>
+                      <blockquote>
+                          <p>"I have worked with Matt for years. He helps people. He has a transformative presence.”</p>
+                      </blockquote>
+
+                      <cite><span>Thomas Vinson</span><br>
+                        Program Manager<br>
+                        Zero Waste Network
+                      </cite>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row hide-on-med-and-down" >
+        <div class="col s2 l2 center testimonial-quote"></div>
+        <div class="col s12 m12 l8 center">
+          <div class="testimonial-quote group right">
+              <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/alex.jpg") %>"><br />
+              <div class="quote-container">
+                  <div>
+                      <blockquote>
+                          <p>"Not only did I feel like a capable man, by the end of our sessions I felt like a f***ing superhero.”</p>
+                      </blockquote>
+
+                      <cite><span>Alex Miller</span><br>
+                        Unemployed!<br>
+                        Traveling in Europe
+                      </cite>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card-panel  hide-on-large-only" >
+        <div class="row" >
+                      <blockquote>
+                          <p>"I felt my confidence to be a great man grow through working with Matt."</p>
+                      </blockquote>
+                      <div class="col s12 center">
+                      <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/brave.jpg") %>"><br />
+                      <cite><span>Brave Legend Pietri</span><br>
+                          Relationship Coach<br>
+                          Alchemy of We
+                      </cite>
+                    </div>
+        </div>
+        <hr />
+        <hr />
+        <div class="row" >
+          <blockquote>
+              <p>"I have worked with Matt for years. He helps people. He has a transformative presence.”</p>
+          </blockquote>
+          <div class="col s12 center">
+            <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/thomas.jpeg") %>"><br />
+            <cite><span>Thomas Vinson</span><br>
+              Program Manager<br>
+              Zero Waste Network
+            </cite>
+          </div>
+        </div>
+        <hr />
+        <hr />
+        <div class="row" >
+          <blockquote>
+              <p>"Not only did I feel like a capable man, by the end of our sessions I felt like a f***ing superhero.”</p>
+          </blockquote>
+          <div class="col s12 center">
+            <img style="border: 3px solid #9CC1D3;width: 120px;height: 120px;" src="<%= static_path(@conn, "/images/thomas.jpeg") %>"><br />
+            <cite><span>Alex Miller</span><br>
+              Unemployed!<br>
+              Traveling in Europe
+            </cite>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8  center">
+
+          <div class="card-panel" style="font-size:2em">
+            <div class="card-panel teal" style="font-size:2em">
+              <h3 class="white-text">Quest for the Master Key</h3>
+            </div>
+              <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+              <div>You will have <span class="red-text text-darken-4">One Month</span> to complete your quest and find your personal master key.</div>
+              <br />
+              <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="center strong white-text text-darken-4 hide-on-med-and-down">It's Time to Face Your Demons</h1><br>
+          <h3 class="center strong white-text text-darken-4 hide-on-large-only">It's Time to Face Your Demons</h3><br>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img class="responsive-img" src="images/demon.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8  center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">Obliterate Your Top 3 Limiting Thoughts</h4>
+          <h5 class="left-align ">
+            Everybody has limiting thoughts that they practice over and over.
+            <br /><br />
+            Often without realizing it. We name these the <span class="red-text text-darken-4">3 Demons of Fear</span>.
+            <br /><br />
+            Your mentor will help you notice these thoughts
+            and find the core belief behind them.
+            <br /><br />
+            Finally face your Demons and be free from their influence forever.
+          </h5>
+        </div>
+        <div class="col s2 center"></div>
+      </div>
+
+      <div class="row">
+        <div class="col l2 center"></div>
+        <div class="col s12 m12 l8 center">
+          <h3 ><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="brown-text">What's Included</h4>
+          <br />
+          <p class="left-align grey-text text-darken-2" style="font-size:1.8em">
+            Enlisting in this program starts you on a one month ride. You'll receive:
+            <br /><br />
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Your Call to Adventure enrollment call </span>  - A 1 hour phone call with Matt Davis where we go deep into your personal vision, and find out what you truly deeply want out of this life.  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Master Key Goal Setting Resources </span>  - These are written and audio resources that will show you how to set a rock solid goal. You will receive tools to help you develop your personal mythos that speaks deeply to your subconscious.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Three Orientation Calls </span>  - During these calls you and your mentor will make a plan for your week that leads you closer to your goal.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Three Coaching and Accountability circles</span>  - At the end of each week, we come together for an accountability and coaching circle. You and your allies will meet in a 90 minute video call.  You will tell your story for the week, both victories and defeat. Declare and commit to your vision and goals for the next week. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Teamwork and Support</span>  - You can text or email your mentor at any time if you need a clue on how to proceed in your journey.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col l2">
+                <p class="left-align grey-text text-darken-2" style="font-size:3em"><i class="material-icons">flash_on</i></p>
+              </div>
+              <div class="col l10">
+                <p class="left-align grey-text text-darken-2" style="font-size:1.8em"><span class="red-text text-darken-3">Closing Ceremony</span>  - At the end of one month, we will regroup and CELEBRATE LIKE KINGS. Did you find your Master Key? Or is there more work to do? Were you wounded? Did you gain treasure?  How do we become stronger men from this experience? How does this fit into your Personal Mythos and Destiny?
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col l2 center"></div>
+          <div class="col s12 m12 l8 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+
+
+            <div class="card-panel" style="font-size:2em">
+                <h3>Quest for the Master Key</h3>
+                <img  src="<%= static_path(@conn, "/images/masterkey3.jpg") %>">
+                <div>You will have <span class="red-text text-darken-4">one month</span> to complete your quest and find your personal master key.</div>
+                <br />
+                <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+            </div>
+          </div>
+          <div class="col s2 center"></div>
+        </div>
+
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+              <h4 class="center brown-text" style="font-weight:bold">Do You Have a Clear Vision?</h4>
+              <p class="center" style="font-size:1.2em;font-weight:bold">Getting clear on what you want is the first step to having it. Your quest begins with the <span class="red-text text-darken-4">Call to Adventure</span> - a 1 on 1 coaching call where you get a chance to explore and explain your vision of your ideal life and future self.  Get crystal clear on what you really truly want.  Join the weekly group calls to be inspired by the visions and stories of the other adventurers joining you on this journey.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">sentiment_dissatisfied</i></h2>
+              <h4 class="center brown-text" style="font-weight:bold">Then What's Stopping You?</h4>
+
+              <p class="light center" style="font-size:1.2em;font-weight:bold">You know what you want, ask yourself "Why don't I have it already?".  It's time to name your <span class="red-text text-darken-4">Personal Demons</span>.  Maybe it is resistance to structure. Maybe it is addiction to alcohol, drugs or sugar.  Your mentor will help you develop a strategy to overcome your demons reliably. We will help you build a structure and plan for your first week of work. </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">whatshot</i></h2>
+              <h4 class="center brown-text" style="font-weight:bold">Grit and Loving Challenge.</h4>
+
+              <p class="light center" style="font-size:1.2em;font-weight:bold">Once you know what you want and you know the demons blocking you it is time to be <span class="red-text text-darken-4">armed and equipped</span> to battle them. Your mentor will challenge you in a way that stirs your deepest power.  No shaming, no fake enthusiasm.  This is pure loving honesty.  It's time to learn the location of your <span class="red-text text-darken-4">Personal Master Key</span>.  These are your deep internal virtues, skills and powers that will guide you to victory.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="center strong black-text text-lighten-3 hide-on-med-and-down">The choice is yours. Your fate is in your hands.</h1><br>
+          <h4 class="center strong black-text text-lighten-3 hide-on-large-only">The choice is yours. Your fate is in your hands.</h3><br>
+            <a href="<%= myth_path(@conn, :sale)%>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img class="responsive-img" src="images/background3.jpg" alt="Unsplashed background img 2"></div>
+  </div>
