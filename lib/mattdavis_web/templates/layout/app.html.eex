@@ -10,8 +10,9 @@
   <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!-- ManyChat -->
+  <!-- Mailchimp! -->
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"29992a903616db2478ac082f2","lid":"146ebcab02"}) })</script>
+
   <script>
   var deadline = new Date("Aug 1, 2018 17:00:00").getTime();
   var x = setInterval(function() {
@@ -28,6 +29,9 @@
       }
   }, 1000);
   </script>
+
+  <!-- ManyChat -->
+  <script src="//widget.manychat.com/801847783318326.js" async="async"></script>
 </head>
 <body>
   <nav class="white" role="navigation" >

@@ -20,6 +20,7 @@ defmodule MattdavisWeb.Router do
     get "/", PageController, :index
     get "/masterkey", MythController, :index
     get "/purchase", MythController, :sale
+    get "/tutoring", PageController, :tutoring
   end
 
   # Other scopes may use custom stacks.

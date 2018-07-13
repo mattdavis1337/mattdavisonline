@@ -4,4 +4,9 @@ defmodule MattdavisWeb.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  def tutoring(conn, _params) do
+    render conn, "tutoring.html"
+  end
+
 end
