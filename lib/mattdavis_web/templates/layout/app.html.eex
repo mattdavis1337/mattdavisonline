@@ -14,7 +14,7 @@
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"29992a903616db2478ac082f2","lid":"146ebcab02"}) })</script>
 
   <script>
-  var deadline = new Date("Aug 1, 2018 17:00:00").getTime();
+  var deadline = new Date("Jul 21, 2018 17:00:00").getTime();
   var x = setInterval(function() {
   var now = new Date().getTime();
   var t = deadline - now;
@@ -22,7 +22,7 @@
   var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
   var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((t % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = days + " days. ";
+  document.getElementById("demo").innerHTML = days + " days and " + hours + " hours";
       if (t < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = "Already Left!";
